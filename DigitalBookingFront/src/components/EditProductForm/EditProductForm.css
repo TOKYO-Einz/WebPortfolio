@@ -1,0 +1,132 @@
+.form-edit-product-container {
+	display: flex;
+	padding: 2rem;
+	margin-bottom: 5rem;
+	margin-top: 2rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-edit-product {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	place-items: center;
+	padding-top: 15rem;
+	padding-bottom: 3rem;
+}
+
+.form-edit-product .input {
+	width: 20rem;
+}
+
+.button-agregar {
+	background: var(--orange) !important;
+	color: #fff !important;
+	border: 1px solid var(--orange) !important;
+	font-weight: 600 !important;
+	width: 12rem;
+	height: 2.75rem;
+}
+
+.button-agregar:hover,
+.btn-cerrar:hover {
+	opacity: 0.8;
+}
+
+.btn-cerrar {
+	background: var(--gray) !important;
+	color: #fff !important;
+	border: none !important;
+	margin-top: 1rem;
+}
+
+.divError {
+	color: var(--orange);
+	font-size: 1rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+.cerrar-form {
+	display: none;
+}
+
+.edit-product-containers {
+	display: flex;
+}
+
+.edit-product-group1,
+.edit-product-group-2,
+.edit-product-group-3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	border: 1px solid #000;
+	padding: 3rem;
+	margin-bottom: 1.5rem;
+}
+
+.edit-product-group1 h4,
+.edit-product-group-2 h4,
+.edit-product-group-3 h4 {
+	margin-bottom: 1.5rem;
+}
+
+.botones-editar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+.botones-editar .btn-cerrar,
+.botones-editar .button-agregar {
+	margin: 0;
+}
+
+.botones-editar .btn-cerrar {
+	margin-left: 4rem;
+}
+
+.image-black-white {
+	filter: grayscale(100%);
+}
+
+@media (max-width: 1000px) {
+	.edit-product-containers {
+		flex-direction: column;
+		align-items: center;
+	}
+	.edit-product-group-2,
+	.edit-product-group-3 {
+		margin-left: 0rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.form-edit-product-container {
+		margin: 2rem;
+		padding: 1rem;
+		text-align: center;
+	}
+
+	.form-edit-product .input {
+		width: 100%;
+	}
+
+	.botones-editar {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 2rem;
+	}
+	.botones-editar .btn-cerrar {
+		margin-left: 0rem;
+		margin-top: 1rem;
+	}
+}

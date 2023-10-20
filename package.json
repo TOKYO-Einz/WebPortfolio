@@ -1,0 +1,15 @@
+{
+  "name": "equipo-02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.ctd.academy:ctd/hispanos/proyecto-integrador-1/proyecto-integrador-0523/1021pt-c5/equipo-02.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

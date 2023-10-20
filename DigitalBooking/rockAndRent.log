@@ -1,0 +1,46 @@
+[2023-07-04-00:22:54] [ INFO ] [CategoryServiceImpl:98] List of categories has been created 
+[2023-07-04-00:23:33] [ INFO ] [CategoryServiceImpl:60] Category with name 1 is found
+[2023-07-04-00:23:33] [ INFO ] [CategoryServiceImpl:60] Category with name 1 is found
+[2023-07-04-00:26:21] [ INFO ] [CategoryServiceImpl:44] Category asdasdasd has been created
+[2023-07-04-11:44:42] [ INFO ] [BrandServiceImpl:45] Brand 2 has been found
+[2023-07-04-11:44:42] [ INFO ] [BrandServiceImpl:45] Brand 2 has been found
+[2023-07-04-11:44:42] [ INFO ] [BrandServiceImpl:62] Brand 2 has been deleted
+[2023-07-04-11:47:45] [ INFO ] [BranchServiceImpl:49] Branch 3 has been found
+[2023-07-04-11:47:45] [ INFO ] [BranchServiceImpl:49] Branch 3 has been found
+[2023-07-04-11:47:45] [ INFO ] [BranchServiceImpl:64] Branch 3 has been deleted
+[2023-07-04-11:52:34] [ INFO ] [CategoryServiceImpl:45] Category nueva has been created
+[2023-07-04-11:52:59] [ INFO ] [BrandServiceImpl:33] Brand nueva has been created
+[2023-07-04-11:53:32] [ INFO ] [BranchServiceImpl:37] Branch nueva has been created
+[2023-07-04-11:55:10] [ INFO ] [FeatureServiceImpl:34] Feature nueva has been created
+[2023-07-04-11:55:31] [ INFO ] [ImageServiceImpl:56] Image nueva has been created
+[2023-07-04-11:55:31] [ INFO ] [ProductServiceImpl:91] Feature nuevo has been created
+[2023-07-04-12:05:25] [ INFO ] [CategoryServiceImpl:60] Category with name 15 is found
+[2023-07-04-12:05:25] [ INFO ] [CategoryServiceImpl:86] Category 15 has been deleted
+[2023-07-04-12:05:25] [ INFO ] [CategoryServiceImpl:60] Category with name 15 is found
+[2023-07-04-12:05:25] [ INFO ] [CategoryServiceImpl:89] Category not found not found
+[2023-07-04-12:47:42] [ INFO ] [BrandServiceImpl:89] Brand list has been created
+[2023-07-04-12:48:54] [ INFO ] [BrandServiceImpl:47] Brand 3 has been found
+[2023-07-04-12:48:54] [ INFO ] [BrandServiceImpl:63] Brand 3 has been deleted
+[2023-07-04-12:48:54] [ INFO ] [BrandServiceImpl:47] Brand 3 has been found
+[2023-07-04-12:48:54] [ INFO ] [BrandServiceImpl:66] Brand 3 has been deleted
+[2023-07-04-12:49:06] [ INFO ] [BrandServiceImpl:89] Brand list has been created
+[2023-07-04-12:53:45] [ INFO ] [BranchServiceImpl:39] Branch fffff has been created
+[2023-07-04-12:54:16] [ INFO ] [BranchServiceImpl:51] Branch 5 has been found
+[2023-07-04-12:54:16] [ INFO ] [BranchServiceImpl:65] Branch 5 has been deleted
+[2023-07-04-12:54:16] [ INFO ] [BranchServiceImpl:51] Branch 5 has been found
+[2023-07-04-12:54:16] [ INFO ] [BranchServiceImpl:68] Branch 5 has been deleted
+[2023-07-04-12:55:39] [ INFO ] [BranchServiceImpl:51] Branch 4 has been found
+[2023-07-04-12:55:39] [ INFO ] [BranchServiceImpl:65] Branch 4 has been deleted
+[2023-07-04-12:55:39] [ INFO ] [BranchServiceImpl:51] Branch 4 has been found
+[2023-07-04-12:55:39] [ INFO ] [BranchServiceImpl:68] Branch 4 has been deleted
+[2023-07-04-12:56:06] [ INFO ] [BranchServiceImpl:82] Branch list has been created
+[2023-07-04-13:02:40] [ INFO ] [ProductServiceImpl:53] ProductProduct(id=1, name=string, description=string, price=string, stock=0, averageScore=null, deleted=false, images=[], brand=Brand(id=1, name=tokyo, image=tokyo, deleted=false), category=Category(id=1, title=pruebax, description=pruebax, imgUrl=pruebax, deleted=false), branch=Branch(id=1, name=rafaelamusica, latitude=25.0, longitude=25.0, address=pellegrini 525, deleted=false), features=[Feature(id=1, name=equipo, icon=equipo)]) has been found
+[2023-07-04-13:02:40] [ INFO ] [ProductServiceImpl:99] Product string has been updated
+[2023-07-04-13:51:09] [ INFO ] [ImageServiceImpl:56] Image has been created
+[2023-07-04-13:51:09] [ INFO ] [ProductServiceImpl:91] Feature ffffff has been created
+[2023-07-04-14:03:07] [ INFO ] [ProductServiceImpl:53] Product 1 has been found
+[2023-07-04-14:03:07] [ INFO ] [ProductServiceImpl:99] Product 1 has been updated
+[2023-07-04-14:06:59] [ INFO ] [ImageServiceImpl:56] Image has been created
+[2023-07-04-14:06:59] [ INFO ] [ProductServiceImpl:91] Feature rrrrrrrrrrrrr has been created
+[2023-07-04-14:08:02] [ INFO ] [ProductServiceImpl:53] Product 9 has been found
+[2023-07-04-14:08:02] [ INFO ] [ProductServiceImpl:99] Product 9 has been updated

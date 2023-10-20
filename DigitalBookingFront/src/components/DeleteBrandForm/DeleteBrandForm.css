@@ -1,0 +1,36 @@
+.delete-brands-container h3 {
+	text-align: center;
+	align-self: center;
+}
+
+.delete-brands-container {
+	padding-top: 19rem;
+	padding-bottom: 10rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.brands-table {
+	margin-top: 1rem;
+	padding-bottom: 0;
+}
+
+@media (max-width: 480px) {
+	.delete-brands-container {
+		padding-top: 19rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.delete-brands-container .btn-cerrar {
+		margin: 0;
+	}
+	.delete-brands-container .table-container {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+}

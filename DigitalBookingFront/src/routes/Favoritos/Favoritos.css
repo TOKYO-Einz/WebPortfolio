@@ -1,0 +1,56 @@
+.favoritos-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
+
+.favoritos-container h3 {
+	margin-bottom: 3rem;
+}
+
+.favoritos-card-container {
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.favoritos-card {
+	display: flex;
+	flex-direction: column;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.btn-remover-favorito {
+	align-self: center;
+}
+
+.button {
+	background-color: var(--dark);
+	border: none;
+}
+
+.button:hover {
+	background-color: var(--orange);
+	border: none;
+	opacity: 0.8;
+}
+
+.remover-todos {
+	width: 20rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.div-sin-favoritos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5rem;
+}

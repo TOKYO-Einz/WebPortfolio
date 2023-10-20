@@ -1,0 +1,151 @@
+.instrument-card-container a {
+	text-decoration: none;
+	color: inherit;
+	position: relative;
+}
+
+.instrument-card {
+	width: 20rem !important;
+	height: 25rem !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	overflow: hidden;
+	text-align: center;
+	margin: 1rem;
+	transition: transform 0.3s ease;
+	position: relative;
+	box-shadow: 0 2px 4px #fff;
+	backdrop-filter: blur(15px);
+}
+
+.instrument-card:hover {
+	box-shadow: 0 4px 8px #f0572d;
+	transform: translateY(-4px);
+	color: var(--dark);
+}
+
+.instrument-card-text {
+	color: var(--dark);
+	font-weight: bold;
+}
+
+.card-image {
+	height: 15rem;
+	overflow: hidden;
+	object-fit: contain;
+	object-position: center;
+	margin-top: 2.5rem;
+}
+
+.card-brand {
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	z-index: 10;
+}
+
+.brand-img-card {
+	width: 5rem;
+	height: auto;
+}
+
+.img-card-steinway {
+	width: 7rem;
+}
+
+.share-card {
+	position: relative;
+	top: 0.2rem;
+}
+
+.fav-and-share {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-self: flex-end;
+	position: absolute;
+	top: 9px;
+	right: 3.5rem;
+	z-index: 10;
+}
+
+@media (max-width: 768px) {
+	.instrument-card:hover {
+		box-shadow: none;
+		transform: none;
+	}
+	.heart-fav {
+		margin-right: 1rem;
+		align-self: flex-end;
+	}
+	.instrument-card-container {
+		width: 40rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.instrument-card {
+		padding: 10rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.instrument-card.card {
+		width: 100vw !important;
+		height: 26rem !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		border-radius: 0px !important;
+	}
+
+	.fav-and-share {
+		z-index: 100;
+	}
+
+	.instrument-card-container {
+		width: 100vw;
+		padding: 0;
+		margin: 0;
+		text-decoration: none;
+		color: inherit;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.carousel-indicators button {
+		background-color: var(--gray) !important;
+	}
+
+	.card-image {
+		margin-top: 0rem;
+	}
+
+	.heart-fav {
+		margin-right: 1rem;
+		align-self: flex-end;
+	}
+
+	.card-brand {
+		position: absolute;
+		top: 10px;
+		left: 30px;
+		z-index: 10;
+	}
+
+	.brand-img-card {
+		width: 5rem;
+		height: auto;
+	}
+
+	.img-card-steinway {
+		width: 7rem;
+	}
+
+	.share-card {
+		margin-right: 0.75rem;
+	}
+}

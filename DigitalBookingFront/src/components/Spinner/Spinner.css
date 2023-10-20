@@ -1,0 +1,23 @@
+.spinner {
+	animation: rotate 2s linear infinite;
+	width: 100px;
+	height: auto;
+	margin-top: 25vh;
+	border-radius: 50%;
+	margin-bottom: 100rem;
+}
+
+.spinner-container {
+	max-height: 100vh;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

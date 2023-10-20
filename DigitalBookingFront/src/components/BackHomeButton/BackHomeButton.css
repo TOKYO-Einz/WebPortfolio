@@ -1,0 +1,50 @@
+.back-home-button {
+	background: var(--orange) !important;
+	color: #fff !important;
+	border: 1px solid var(--orange) !important;
+	font-weight: 600 !important;
+	width: 15rem;
+	height: 2.75rem;
+	align-self: center;
+	margin-bottom: 2rem;
+}
+
+.back-home-button:hover {
+	opacity: 0.8;
+}
+
+.back-home-button-icon {
+	background: var(--orange) !important;
+	color: #fff !important;
+	border: 1px solid var(--orange) !important;
+	font-weight: 600 !important;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50% !important;
+	align-self: center;
+	z-index: 100;
+}
+
+.back-home-button-icon:hover {
+	opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+	.back-home-button {
+		width: 10rem;
+	}
+	.back-home-button-icon {
+		width: 4rem;
+		height: 4rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.back-home-button {
+		width: 6rem;
+	}
+	.back-home-button-icon {
+		width: 3rem;
+		height: 3rem;
+	}
+}

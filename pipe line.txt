@@ -1,0 +1,108 @@
+stages:
+  - build
+  - deployS3
+  - testS3
+  - testjava
+  - deployjava
+
+
+build-front-wep:
+  stage: build
+  image: node:latest
+  script:
+    - cd DigitalBookingFront
+    - echo "Instalando npm"
+    - npm install
+    - echo "buildeando la aplicacion"
+    - npm run build
+  artifacts:
+    name: front_build
+    paths:
+      - ./DigitalBookingFront/dist/
+  rules:
+    - changes:
+      - DigitalBookingFront/**/*
+
+deploy-front-wep:
+  stage: deployS3
+  needs: [build-front-wep]
+  image:
+    name: amazon/aws-cli:latest
+    entrypoint: 
+      - '/usr/bin/env'
+  script:
+    - aws s3 sync DigitalBookingFront/dist/ s3://g2c5-frontnode
+  rules:
+    - changes:
+      - DigitalBookingFront/**/*
+  
+test-front-s3:
+  needs: [deploy-front-wep]
+  stage: testS3
+  image: node:latest
+  script:
+    - cd DigitalBookingFront
+    - echo "efectuando los test"
+    - npm install
+    - npm run test
+    - echo "Test finalizados"
+  artifacts:
+    name: unit_test
+    paths:
+      - ./DigitalBookingFront/rspec.xml
+    reports:
+      junit: ./DigitalBookingFront/rspec.xml
+  rules:
+    - changes:
+      - DigitalBookingFront/**/*
+      
+
+
+build-java-project:
+  stage: build
+  tags:
+    - java-maven
+  script:
+    - cd DigitalBooking/
+    - echo "Creando el package de la app"
+    - mvn package
+    - sudo cp /$CI_PROJECT_DIR/DigitalBooking/target/DigitalBooking-0.0.1-SNAPSHOT.jar /home/ubuntu/
+  artifacts:
+    paths:
+      - /$CI_PROJECT_DIR/DigitalBooking/target/DigitalBooking-0.0.1-SNAPSHOT.jar
+  rules:
+    - changes:
+        - DigitalBooking/**/*
+
+test-java-project:
+  stage: testjava
+  needs: [build-java-project]
+  tags:
+    - java-maven
+  script:
+    - echo "Testeando al aplicacion"
+    - cd DigitalBooking
+    - mvn test
+    - echo "Testeo Terminado"
+  rules:
+    - changes:
+        - DigitalBooking/**/*
+
+deploy-java-proyect:
+  stage: deployjava
+  needs: [test-java-project]
+  tags:
+    - java-maven
+  script:
+    - echo "Parando el servicio"
+    - sudo systemctl stop digitalbooking.service
+    - sudo systemctl stop refreshLog.service
+    - sudo systemctl start refreshLog.service
+    - echo "reemplazando por el nuevo jar"
+    - sudo cp /home/ubuntu/DigitalBooking-0.0.1-SNAPSHOT.jar /home/ubuntu/DigitalBooking/
+    - echo "Iniciando nuevamente el servicio"
+    - sudo systemctl start digitalbooking.service
+    - sudo mostrarip
+  rules:
+    - changes:
+        - DigitalBooking/**/*

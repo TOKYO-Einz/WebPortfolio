@@ -1,0 +1,40 @@
+.not-found-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 2rem;
+	padding-top: 2rem;
+}
+
+.logo-not-found {
+	height: 40vh;
+	width: auto;
+}
+
+.error-text.second {
+	margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+	.logo-not-found {
+		height: 40vh;
+		width: auto;
+	}
+}
+
+@media (max-width: 480px) {
+	.not-found-container {
+		padding: 3rem;
+	}
+	.logo-not-found {
+		height: 30vh;
+		width: auto;
+	}
+	.error-text {
+		font-size: 1.2rem;
+	}
+	.button-not-found {
+		width: 10rem;
+	}
+}

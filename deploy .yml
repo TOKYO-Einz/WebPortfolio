@@ -1,0 +1,27 @@
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+
+    steps:
+
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+
+      - name: install
+        run: npm ci
+      
+      - name: build
+        run: npm run build
+
+      - name: configure aws Credential
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: $AWS-REGION
+          aws-acces-key-id: $AWS_SECRET_ACCESS_KEY
+          aws-secret-acces-key: $AWS_ACCESS_KEY_ID
+      - name: uplaod to S3
+        run: aws s3 cp --recursive ./dist/ s3://$DEV_S3_BUCKET

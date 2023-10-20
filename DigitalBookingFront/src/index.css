@@ -1,0 +1,86 @@
+/*** Global ***/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+:root {
+	font-family: Roboto, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	box-sizing: border-box;
+	--orange: #f0572d;
+	--gray: #31363f;
+	--dark: #191b1d;
+	--light: #dfe4ea;
+
+	color: var(--dark);
+	background-color: var(--light);
+}
+
+/*** Body ***/
+
+body,
+html {
+	min-height: 100vh;
+	font-family: "Roboto", sans-serif;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	overflow-x: hidden;
+	flex-direction: column;
+}
+
+/* Generals */
+
+.error-input {
+	border: 1px solid var(--orange);
+	box-shadow: 0 0 5px var(--orange);
+}
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus,
+select:active,
+select:focus {
+	border: 1px solid var(--orange) !important;
+	box-shadow: 0 0 5px var(--orange) !important;
+}
+
+input[type="checkbox"]:checked {
+	background-color: var(--orange);
+	border: 1px solid var(--orange);
+}
+
+.error-message {
+	display: flex;
+	justify-content: center;
+	color: var(--orange);
+	font-style: italic;
+	font-size: small;
+}
+
+.btn-general {
+	background-color: var(--orange) !important;
+	border: none !important;
+}
+
+.btn-general:hover {
+	opacity: 0.8;
+}
+
+.custom-confirm-button {
+	outline: none !important;
+	box-shadow: none !important;
+	border: none !important;
+}
+
+.custom-confirm-button:active {
+	outline: none !important;
+	box-shadow: none !important;
+	border: none !important;
+}

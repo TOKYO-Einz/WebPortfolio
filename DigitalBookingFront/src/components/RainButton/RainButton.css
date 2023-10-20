@@ -1,0 +1,15 @@
+.note {
+	position: fixed;
+	font-size: 30px;
+	color: var(--orange);
+	animation: rain 2s linear infinite;
+}
+
+@keyframes rain {
+	0% {
+		transform: translateY(-100vh);
+	}
+	100% {
+		transform: translateY(100vh);
+	}
+}

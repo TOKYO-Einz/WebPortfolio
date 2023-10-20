@@ -1,0 +1,43 @@
+.navbar-admin {
+	background: var(--gray) !important;
+	z-index: 100;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:active,
+.navbar .nav-link:focus {
+	color: var(--orange) !important;
+}
+
+.admin-opciones a.nav-link {
+	font-size: 1.2rem;
+	margin-left: 0.5rem;
+}
+
+.admin-opciones a.nav-link:hover {
+	color: var(--orange) !important;
+}
+
+.panel-admin-title {
+	font-size: 1.4rem;
+}
+
+.navigation-back .back-home-button-icon {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+@media (max-width: 480px) {
+	.navigation-back .back-home-button-icon {
+		height: 3rem;
+		width: 3rem;
+		margin-right: 2rem;
+	}
+	.navbar-brand {
+		margin-left: 0.5rem;
+	}
+
+	.panel-admin-title {
+		font-size: 1.2rem;
+	}
+}

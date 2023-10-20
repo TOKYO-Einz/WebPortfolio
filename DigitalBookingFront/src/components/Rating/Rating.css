@@ -1,0 +1,52 @@
+.rating-container {
+	display: flex;
+	align-items: center;
+}
+
+.guitars-container {
+	display: flex;
+}
+
+.guitars-score {
+	margin-right: 2rem;
+}
+
+.guitars-score {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.hide-guitars,
+.hide-span {
+	display: none;
+}
+
+.rating-icon {
+	font-size: 22px;
+	color: var(--light);
+	transition: color 0.3s;
+	cursor: pointer;
+}
+
+.rating-icon.highlighted {
+	color: var(--orange);
+}
+
+.rating-label {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.rating-number {
+	background-color: var(--orange);
+	color: var(--gray);
+	display: inline-block;
+	padding: 0.5rem;
+	border-radius: 5px;
+	width: 3rem;
+	height: auto;
+	text-align: center;
+	font-weight: bold;
+}

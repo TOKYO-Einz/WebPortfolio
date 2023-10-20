@@ -1,0 +1,120 @@
+.reserved {
+	color: "#ccc";
+	text-decoration: line-through;
+}
+
+.in-service {
+	color: "#ccc";
+	text-decoration: line-through;
+}
+
+.date-picker-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+}
+
+.calendars {
+	display: flex;
+	flex-direction: row;
+}
+
+.date-picker-div .div-home {
+	margin: 0px;
+	display: flex;
+	flex-direction: row;
+}
+
+.date-picker-input {
+	align-self: flex-start;
+	width: 15rem;
+	height: 2.5rem;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	border: none;
+}
+
+.rmdp-week-day {
+	color: var(--orange) !important;
+}
+
+.rmdp-day span:hover {
+	color: var(--dark) !important;
+	background-color: var(--orange) !important;
+}
+
+span.sd {
+	color: var(--dark);
+}
+
+.rmdp-day.rmdp-today span {
+	background-color: var(--dark) !important;
+}
+
+.rmdp-day.rmdp-today span:hover {
+	color: var(--light) !important;
+}
+
+.rmdp-day.rmdp-range {
+	background-color: var(--orange);
+}
+
+.rmdp-day.rmdp-range span {
+	color: #fff;
+}
+
+.rmdp-arrow-container:hover {
+	color: var(--orange) !important;
+}
+
+.calendar-1-month {
+	display: none;
+}
+
+.error-rango {
+	margin-top: 1rem;
+	color: var(--orange);
+	font-weight: bold;
+}
+
+.mensajes-error {
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+}
+
+@media (max-width: 768px) {
+	.date-picker-div {
+		flex-direction: column;
+	}
+
+	.date-picker-input {
+		text-align: center;
+	}
+	.calendar-2-months {
+		display: none;
+	}
+	.calendar-1-month {
+		display: block;
+	}
+}
+
+@media (max-width: 480px) {
+	.date-picker-div {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.date-picker-input {
+		text-align: center;
+		width: 17.2rem;
+	}
+	.calendar-2-months {
+		display: none;
+	}
+	.searcher-button {
+		margin-top: 1rem;
+	}
+}

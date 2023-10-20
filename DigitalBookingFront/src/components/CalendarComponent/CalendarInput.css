@@ -1,0 +1,111 @@
+.date-picker-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+}
+
+.date-picker-icon-2-months {
+	margin-right: 0.3rem;
+}
+
+.date-picker-input {
+	align-self: flex-start;
+	flex-direction: row;
+
+	width: 15rem;
+	height: 2.5rem;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	border: none;
+}
+
+.rmdp-week-day {
+	color: var(--orange) !important;
+}
+
+.rmdp-day span:hover {
+	color: var(--dark) !important;
+	background-color: var(--orange) !important;
+}
+
+span.sd {
+	color: var(--dark);
+}
+
+.rmdp-day.rmdp-today span {
+	background-color: var(--dark) !important;
+}
+
+.rmdp-day.rmdp-today span:hover {
+	color: var(--light) !important;
+}
+
+.rmdp-day.rmdp-range {
+	background-color: var(--orange);
+}
+
+.rmdp-day.rmdp-range span {
+	color: #fff;
+}
+
+.rmdp-arrow-container:hover {
+	background-color: var(--orange) !important;
+}
+
+.calendar-1-month,
+.date-picker-icon-1-month {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.date-picker-div {
+		flex-direction: column;
+	}
+	.date-picker-icon-1-month {
+		margin-bottom: 0.5rem;
+	}
+	.date-picker-input {
+		text-align: center;
+	}
+	.calendar-2-months,
+	.date-picker-icon-2-months {
+		display: none;
+	}
+	.calendar-1-month,
+	.date-picker-icon-1-month {
+		display: block;
+	}
+}
+
+@media (max-width: 480px) {
+	.date-picker-div {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.date-picker-icon-1-month {
+		background-color: #fff !important;
+		color: var(--dark);
+		border-radius: 5px;
+		height: 2.2rem;
+		width: 2.2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 0rem;
+		margin-right: 0.5rem;
+	}
+	.date-picker-input {
+		text-align: center;
+		width: 17.2rem;
+	}
+	.calendar-2-months {
+		display: none;
+	}
+
+	.searcher-button {
+		margin-top: 1rem;
+	}
+}

@@ -1,0 +1,16 @@
+.form-edit-branch {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	place-items: center;
+	padding-top: 20rem;
+	padding-bottom: 10rem;
+	border: none;
+}
+
+@media (max-width: 480px) {
+	.form-edit-branch {
+		margin-top: 0rem;
+	}
+}

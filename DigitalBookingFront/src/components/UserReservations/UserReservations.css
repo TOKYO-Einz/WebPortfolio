@@ -1,0 +1,43 @@
+.user-reservations-container {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--dark);
+	color: var(--light);
+	width: 100vw;
+	min-height: 100vh;
+	height: auto;
+	padding-top: 12rem;
+	padding-bottom: 10rem;
+}
+
+.user-reservations-container h4 {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.table-user-reservations {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.table-user-reservations-container {
+	padding-top: 4rem;
+}
+
+
+@media (max-width: 480px) {
+	.user-reservations-container {
+		padding-top: 12rem;
+		/* width: 100vw; */
+	}
+	.table-user-reservations {
+		font-size: 0.8rem;
+	}
+
+	.user-resevations-header {
+		width: 100%;
+	}
+	.user-resevations-header h2 {
+		margin-left: 0;
+	}
+}

@@ -1,0 +1,61 @@
+.form-add-category-container {
+	padding-bottom: 4rem;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10rem;
+	padding-bottom: 5rem;
+}
+
+.form-add-category {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	place-items: center;
+}
+
+.form-add-category .input {
+	width: 20rem;
+}
+
+.button-agregar {
+	background: var(--orange) !important;
+	color: #fff !important;
+	border: 1px solid var(--orange) !important;
+	font-weight: 600 !important;
+	width: 12rem;
+	height: 2.75rem;
+}
+
+.button-agregar:hover,
+.btn-cerrar:hover {
+	opacity: 0.8;
+}
+
+.btn-cerrar {
+	background: var(--gray) !important;
+	color: #fff !important;
+	border: none !important;
+	margin-top: 1rem;
+}
+
+.divError {
+	color: var(--orange);
+	font-size: 1rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+.cerrar-form {
+	display: none;
+}
+
+@media (max-width: 480px) {
+	.form-add-category-container {
+		margin: 0px;
+	}
+	.form-add-category .input {
+		width: 15rem;
+	}
+}

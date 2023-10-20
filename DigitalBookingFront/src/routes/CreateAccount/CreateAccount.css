@@ -1,0 +1,86 @@
+.crear-cuenta-container {
+	display: flex;
+	justify-content: center;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
+
+.form-crear-cuenta {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: center;
+	padding: 2rem;
+	width: 25rem;
+	justify-content: center;
+	height: 100%;
+	border-radius: 5%;
+	box-shadow: 0 0 5px var(--dark);
+}
+
+.form-crear-cuenta h3 {
+	margin-bottom: 1rem;
+}
+
+.form-crear-cuenta button {
+	background-color: var(--orange);
+	border: none;
+}
+
+.form-crear-cuenta button:hover,
+.form-crear-cuenta button:active {
+	background-color: #fff;
+	border: solid 1px var(--orange);
+	color: var(--orange);
+	opacity: 0.8;
+}
+
+.error-div {
+	margin-bottom: 1rem;
+	color: var(--orange);
+}
+
+.formgroup-create-user {
+	width: 20rem;
+	margin-bottom: 1rem;
+}
+
+.input-create-user {
+	height: 15rem !important;
+}
+
+.error-input-create-user {
+	border: 1px solid var(--orange);
+	box-shadow: 0 0 5px var(--orange);
+}
+
+.error-text-message {
+	display: flex;
+	justify-content: center;
+	color: var(--orange);
+	font-style: italic;
+	font-size: small;
+}
+
+.text-info-password {
+	display: block;
+}
+
+.crear-cuenta-container {
+	border-radius: 5%;
+	margin: 1rem;
+	padding-top: 10rem;
+	padding-bottom: 7rem;
+}
+
+.form-crear-cuenta img {
+	width: 110px;
+	height: auto;
+	margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+	.new-account {
+		width: 23rem;
+	}
+}

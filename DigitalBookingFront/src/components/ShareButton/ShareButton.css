@@ -1,0 +1,51 @@
+.share-button-icon {
+	background-color: transparent !important;
+	border: none !important;
+	color: var(--orange) !important;
+	font-size: 1.5rem;
+}
+
+.share-button-icon:hover {
+	color: var(--gray) !important;
+}
+
+.share-button-icon.redes {
+	color: var(--gray) !important;
+}
+
+.share-icon {
+	font-size: 1.5rem;
+}
+
+.icon-modal-redes.facebook:hover {
+	opacity: 0.8;
+	color: #0a66c2;
+	transform: scale(1.2);
+}
+
+.icon-modal-redes.twitter:hover {
+	opacity: 0.8;
+	color: #00acee;
+	transform: scale(1.2);
+}
+
+.icon-modal-redes.whatsapp:hover {
+	opacity: 0.8;
+	color: #25d366;
+	transform: scale(1.2);
+}
+
+.modal-redes-footer {
+	display: flex !important;
+	justify-content: center !important;
+}
+
+.icon-modal-redes {
+	font-size: 2rem;
+}
+
+@media (max-width: 480px) {
+	.share-button-icon {
+		padding: 0;
+	}
+}

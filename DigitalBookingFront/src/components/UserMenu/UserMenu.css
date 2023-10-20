@@ -1,0 +1,67 @@
+.iniciar-sesion-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.iniciar-sesion-button {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.iniciar-sesion-dropdown {
+	margin-top: 0.5rem;
+	z-index: 1000;
+}
+
+.dropdown-menu .dropdown-item:active {
+	color: var(--dark) !important;
+	background-color: var(--orange) !important;
+}
+
+.menu-nombre-select {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+}
+
+.user-name-complete {
+	color: var(--dark);
+	font-weight: bold;
+}
+
+.user-name-initials {
+	font-weight: bold;
+	border-radius: 50%;
+	margin-right: 2rem;
+	width: 4rem;
+	height: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--dark);
+	box-shadow: 0 2px 5px var(--dark);
+	transform: perspective(100px) rotateX(10deg);
+	background-color: #f0572d;
+	transition: background-color 0.3s ease;
+}
+
+.user-name-initials:hover {
+	cursor: pointer;
+	background-color: #ff7b55;
+}
+
+.user-name-initials-link {
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+	.user-name-initials {
+		display: none;
+	}
+}

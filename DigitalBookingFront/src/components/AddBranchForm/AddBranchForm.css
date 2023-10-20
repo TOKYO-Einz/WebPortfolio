@@ -1,0 +1,30 @@
+.botones-agregar-sucursal {
+	display: flex;
+	flex-direction: column;
+}
+
+.input-agregar-sucursal {
+	width: 25rem;
+}
+
+.add-branch-container {
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+}
+
+@media (max-width: 480px) {
+	.input-agregar-sucursal {
+		width: 20rem;
+	}
+	.form-add-branch {
+		margin-top: 5rem !important;
+		border: none;
+	}
+
+	.titulo-agregar-sucursal {
+		margin-bottom: 2rem !important;
+	}
+	.botones-agregar-sucursal .button-agregar {
+		margin-top: 0.5rem;
+	}
+}

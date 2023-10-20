@@ -1,0 +1,154 @@
+.nav-bar-admin {
+	position: absolute;
+	top: 10rem;
+	width: 100vw;
+}
+
+.form-add-product-container {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 4rem;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 20rem;
+	margin-bottom: 5rem;
+}
+
+.sections-container {
+	display: flex;
+}
+
+.section-add-product {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	border: solid 1px var(--gray);
+	width: 25vw;
+}
+
+.section-add-product h4 {
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.form-add-product h3 {
+	text-align: center;
+}
+
+.form-add-product .input {
+	width: 20rem;
+}
+
+div .botones-agregar-producto {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-agregar {
+	background: var(--orange) !important;
+	color: #fff !important;
+	border: 1px solid var(--orange) !important;
+	font-weight: 600 !important;
+	width: 12rem;
+	margin-top: 2rem;
+}
+
+.button-agregar:hover,
+.btn-cerrar-agregar-prod:hover {
+	opacity: 0.8;
+}
+
+.btn-cerrar-agregar-prod {
+	background: var(--gray) !important;
+	color: #fff !important;
+	border: none !important;
+	margin-top: 2rem !important;
+	margin-left: 2rem !important;
+}
+
+.divError {
+	color: var(--orange);
+	font-size: 1rem;
+	text-align: center;
+}
+
+.cerrar-form {
+	display: none;
+}
+
+.div-btn-agregar-imagenes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-agregar-imagenes {
+	background-color: var(--orange) !important;
+	border: none !important;
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+}
+
+.btn-agregar-imagenes:hover {
+	opacity: 0.8;
+}
+
+.img-upload-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0.5rem;
+}
+
+.div-imagenes-add-product {
+	max-width: 100%;
+	overflow: hidden;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	flex-direction: column;
+	align-items: center;
+}
+
+.div-imagen-add-product {
+	object-fit: contain;
+	object-position: center;
+}
+
+.imagen-add-product {
+	width: 100px;
+	height: auto;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1000px) {
+	.sections-container {
+		width: 90vw;
+		flex-direction: column;
+	}
+
+	.section-add-product {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width: 480px) {
+	.form-add-product-container {
+		width: 100vw;
+		text-align: center;
+	}
+	.form-add-product .input {
+		width: 100%;
+	}
+}

@@ -1,0 +1,118 @@
+.recommendations-container {
+	background: var(--dark);
+	max-width: 100vw;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.recommendations-container h3 {
+	color: var(--light);
+	margin-bottom: 1rem;
+}
+
+.recommendations-cards {
+	max-width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagination .page-link {
+	background-color: var(--dark);
+	color: #fff;
+}
+
+.pagination .page-link:hover {
+	background-color: var(--orange);
+	color: #fff;
+}
+
+.pagination .page-item.active .page-link {
+	background-color: var(--orange);
+	border-color: #fff;
+}
+
+.carousel-recommendations {
+	display: none;
+}
+
+.wings-container {
+	overflow: hidden;
+}
+
+.wings-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.5;
+}
+
+.recommendations-container::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("../../assets/wings.png");
+	background-size: cover;
+	opacity: 0.5;
+	pointer-events: none;
+	z-index: -1;
+}
+
+@media (max-width: 768px) {
+	.recommendations-cards {
+		width: 100vw;
+	}
+	.div-reccomendations-card-container {
+		width: 100vw;
+	}
+}
+
+@media (max-width: 480px) {
+	.reservar-grid-container h4 {
+		text-align: center;
+	}
+
+	.reservar-detalle-reserva h4 {
+		align-self: center !important;
+	}
+
+	.recommendations-container {
+		width: 100vw;
+		margin: 0px;
+		padding: 4rem;
+	}
+
+	.recommendations-container h3 {
+		font-size: 1.7rem;
+		padding-bottom: 1rem;
+	}
+
+	.recommendations-cards {
+		display: none;
+	}
+
+	.carousel-recommendations {
+		display: block;
+		width: 100vw;
+	}
+
+	.carousel-recommendations-card .card-brand {
+		width: 5rem;
+		height: auto;
+	}
+
+	.pagination-recommendations {
+		display: none;
+	}
+}

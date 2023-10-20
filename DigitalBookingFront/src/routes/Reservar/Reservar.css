@@ -1,0 +1,188 @@
+.reservar-container {
+	padding-top: 10rem;
+	padding-bottom: 7rem;
+}
+
+.reservar-grid-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	display: grid;
+	grid-template-columns: 60% 30%;
+	grid-template-rows: repeat(3, auto);
+	grid-gap: 2rem;
+	min-height: 100vh;
+}
+
+.reservar-grid-section {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	border-radius: 18px;
+	box-shadow: 0 2px 4px var(--dark);
+}
+
+.reservar-datos-personales,
+.reservar-calendario,
+.reservar-horario-retiro {
+	grid-column: 1;
+	display: flex;
+}
+
+.reservar-detalle-reserva {
+	grid-column: 2;
+	grid-row: 1 / span 3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.reservar-detalle-reserva h4 {
+	align-self: flex-start;
+}
+
+.btn-confirmar-reserva {
+	background-color: var(--orange) !important;
+	border: none !important;
+}
+
+.personal-data-form-container .personal-information-title {
+	display: none;
+}
+
+.personal-data-form-container .personal-information-form {
+	border: none;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0px;
+	align-self: center;
+}
+
+.personal-data-form-container .btn-guardar-cambios {
+	display: none;
+}
+
+.calendar-component {
+	margin: 1rem;
+}
+
+.image-card-detalles-reserva {
+	min-width: 20rem;
+	max-height: 30rem;
+	overflow: hidden;
+	object-fit: contain;
+	object-position: center;
+}
+
+.btn-confirmar-reserva {
+	width: 100%;
+	height: 4rem;
+	font-size: 1.5rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.btn-confirmar-reserva:hover {
+	opacity: 0.8;
+}
+
+.reservar-horario-retiro h4 {
+	margin-bottom: 1.5rem;
+}
+.reservar-horario-retiro span {
+	font-size: 1.2rem;
+	margin-bottom: 1.5rem;
+}
+.reservar-horario-retiro .form-horario-reserva {
+	font-size: 1.2rem;
+	margin-bottom: 1.5rem;
+}
+
+.link-terminos {
+	color: var(--dark);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.link-terminos:hover {
+	color: var(--orange);
+}
+
+.span-bolded {
+	font-weight: bold;
+}
+
+.confetti {
+	position: relative;
+	right: 100%;
+	bottom: 40%;
+}
+
+.horario-select option:hover,
+.horario-select option:focus {
+	background-color: var(--orange) !important;
+}
+
+@media (max-width: 1000px) {
+	.reservar-grid-container {
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+	}
+
+	.reservar-detalle-reserva {
+		grid-column: 1;
+		grid-row: auto;
+	}
+	.confetti {
+		display: none;
+	}
+	.terminos-y-condiciones {
+		margin-top: 2rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.reservar-grid-section {
+		flex-wrap: wrap;
+		min-width: 480px;
+		align-self: center;
+	}
+}
+
+@media (max-width: 480px) {
+	.image-card-detalles-reserva {
+		min-width: 15rem;
+	}
+	.reservar-grid-section {
+		min-width: auto;
+		max-width: auto;
+		align-self: center;
+	}
+	.reservar-horario-retiro {
+		text-align: center;
+	}
+	.reservar-horario-retiro span {
+		font-size: 1rem;
+	}
+	.form-horario-reserva option {
+		text-align: center !important;
+	}
+	.terminos-y-condiciones {
+		margin-top: 1rem;
+	}
+
+	.swal2-title {
+		font-size: 1.5rem !important;
+	}
+	.swal2-container .swal2-center .swal-container .swal2-backdrop-show {
+		width: 100vw !important;
+		max-width: 100vw !important;
+	}
+}

@@ -1,0 +1,16 @@
+.home-container {
+	display: flex;
+	flex-direction: column;
+	padding-top: 10rem;
+	padding-bottom: 7rem;
+}
+
+.home {
+	min-height: 100vh;
+}
+
+.spinner-home {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

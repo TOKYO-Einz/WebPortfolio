@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="12" failures="0" errors="0" time="5.54">
+    <testsuite name="src/__tests__/detalle_producto.test.jsx" timestamp="2023-06-28T22:15:40.380Z" hostname="Jorge" tests="3" failures="0" errors="0" skipped="0" time="0.038">
+        <testcase classname="src/__tests__/detalle_producto.test.jsx" name="something truthy and falsy &gt; true to be true" time="0.003">
+        </testcase>
+        <testcase classname="src/__tests__/detalle_producto.test.jsx" name="something truthy and falsy &gt; false to be false" time="0.001">
+        </testcase>
+        <testcase classname="src/__tests__/detalle_producto.test.jsx" name="Product detail test &gt; should show a button with the name Reservar" time="0.03">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/footer.test.jsx" timestamp="2023-06-28T22:15:40.386Z" hostname="Jorge" tests="1" failures="0" errors="0" skipped="0" time="0.114">
+        <testcase classname="src/__tests__/footer.test.jsx" name="&lt;Footer /&gt; &gt; contenido renderizado" time="0.112">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/reservar.test.jsx" timestamp="2023-06-28T22:15:40.386Z" hostname="Jorge" tests="6" failures="0" errors="0" skipped="0" time="1.348">
+        <testcase classname="src/__tests__/reservar.test.jsx" name="&lt;Reservar /&gt; &gt; se permite visualizar el campo de código postal" time="0.23">
+            <system-err>
+no se pudo encontrar al usuario
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/reservar.test.jsx" name="&lt;Reservar /&gt; &gt; se permite visualizar el campo de DNI" time="0.137">
+            <system-err>
+no se pudo encontrar al usuario
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/reservar.test.jsx" name="&lt;Reservar /&gt; &gt; se permite seleccionar la fecha de reserva" time="0.165">
+            <system-err>
+no se pudo encontrar al usuario
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/reservar.test.jsx" name="&lt;Reservar /&gt; &gt; se permite seleccionar el horario de retiro" time="0.129">
+            <system-err>
+no se pudo encontrar al usuario
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/reservar.test.jsx" name="&lt;Reservar /&gt; &gt; se permite consultar los detalles de la reserva" time="0.134">
+            <system-err>
+no se pudo encontrar al usuario
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/__tests__/reservar.test.jsx" name="&lt;Reservar /&gt; &gt; se permite visualizar el botón para confirmar reserva" time="0.548">
+            <system-err>
+no se pudo encontrar al usuario
+
+            </system-err>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/shareButton.test.jsx" timestamp="2023-06-28T22:15:40.389Z" hostname="Jorge" tests="1" failures="0" errors="0" skipped="0" time="0.206">
+        <testcase classname="src/__tests__/shareButton.test.jsx" name="&lt;ShareButton /&gt; &gt; Renderiza correctamente el botón de compartir" time="0.202">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/__tests__/userReservations.test.jsx" timestamp="2023-06-28T22:15:40.389Z" hostname="Jorge" tests="1" failures="0" errors="0" skipped="0" time="0.044">
+        <testcase classname="src/__tests__/userReservations.test.jsx" name="&lt;UserReservations /&gt; &gt; Se visualiza el título Mis reservas" time="0.036">
+        </testcase>
+    </testsuite>
+</testsuites>

@@ -1,0 +1,15 @@
+.heart-fav-button {
+	color: var(--orange);
+	font-size: 1.5rem;
+	position: relative;
+	left: 50%;
+	z-index: 100;
+}
+
+.heart-fav-button:hover {
+	cursor: pointer;
+}
+
+.empty-heart {
+	border: 1px solid var(--orange);
+}

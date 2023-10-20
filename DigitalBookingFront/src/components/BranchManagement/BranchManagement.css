@@ -1,0 +1,44 @@
+.btn-cerrar:hover {
+	opacity: 0.8;
+}
+
+.cerrar-form {
+	display: none;
+}
+
+.gestion-sucursales-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 15rem;
+	padding-bottom: 5rem;
+}
+
+.table-container-sup {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 5rem;
+	padding-bottom: 1rem;
+}
+
+.btn-cerrar-edit {
+	margin-bottom: 2rem;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 480px) {
+	.table-container-sup {
+		padding-top: 0rem;
+		padding-bottom: 0rem;
+	}
+	.table-container-sup .table-container {
+		padding: 0px;
+		margin-top: 1.5rem;
+	}
+	.gestion-sucursales-container {
+		padding-top: 17rem;
+	}
+}
